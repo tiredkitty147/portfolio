@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Development | Tired Kitty </title>
+    <link rel="stylesheet" href="./iterative-design.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container-1">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">tired kitty</a>
+                <ul id="menu">
+                    <li><a href="./index.html">work</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+
+
+
+        </div>
+    </div>
+
+
+    <div id="part">
+        <div class="row">
+            <div class="container-2">
+                <div class="text">
+                    <h1 class="assignment-title"> Development</h1>
+                    <div class="info-row">
+                        <div class="info-col">
+                            <strong class="info-col-title">Team:</strong>
+                            <div class="info">
+                                <p>Individual</p>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <strong class="info-col-title">Role:</strong>
+                            <div class="info">
+                                <p>Developer & Designer</p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-col">
+                            <strong class="info-col-title">Timeline:</strong>
+                            <div class="info">
+                                <p>November 2022 (1 week)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="introduction">
+                <div class="container-2">
+                    <h1 class="introduction-title"> Introduction</h1>
+                    <p class="introduction-parag">Developement is a project I have completed as a part
+                        of CSCI1300:
+                        User Interface and User Experiences course at Brown University.
+                        My task was to design and develop an interactive interface, use interface components, 
+                        and tie the components to an internal data state. I created a list-based interface for users to select items out of a list, which then aggregates them,
+                        by using React.
+                    </p>
+                    
+                </div>
+            </div>
+
+
+            <div class="container-2">
+                <h1 class="part-1-title">Architecture</h1>
+                <div class="part-1-col-1">
+                    <h1 class="sub-title">Pre-developement Thinking</h1>
+                    <p>I picked Turkish bakery theme for my list and favorites list for my aggregator interface and thought about the 
+                        elements that I was making into components, props, or states. I decided that my interface would include a list of items of a bakery for purchase 
+                        and a favorites list that totals the price of the favorite items. I also chose to 
+                        show my item list and aggregator on the same page.
+                    </p>
+                    <p>
+                        In this session, I concluded to include the following features:
+                    </p>
+
+                    <ul>
+                        <li>
+                            At least 2 filtering categories:
+                        </li>
+                        <ul class="sub-ul" style="margin-top:0; list-style-type:disc;">
+                            <li>
+                                When a user is buying pastries, they filter by the type of the item and dietary
+                                restrictions.
+                            </li>
+                        </ul>
+                        <li>
+                            At least 1 sorting feature:
+                        </li>
+                        <ul class="sub-ul"  style="margin-top:0; list-style-type:disc;">
+                            <li>
+                                The user can sort the items by price or popularity. They can choose to see the cheapest first, most
+                                expensive first, or the most popular first. 
+                            </li>
+                        </ul>
+                        <li>
+                            An aggregator section (can be a dashboard, list, cart) on the same page displaying: 
+                        </li>
+                        <ul class="sub-ul"  style="margin-top:0; list-style-type:disc;">
+                            <li>
+                                Items you added to the aggregator
+                            </li>
+                            <li>
+                                Aggregation of cost of the items
+                            </li>
+                        </ul>
+                        <li>
+                            At least 12 item cards, each displaying: 
+                        </li>
+                        <ul class="sub-ul"  style="margin-top:0; list-style-type:disc;">
+                            <li>
+                                Item image
+                            </li>
+                            <li>
+                                Categories that your filter uses: dietary restrictions and type of the item
+                            </li>
+                            <li>
+                                Field(s) that your sort uses: Price
+                            </li>
+                            <li>
+                                Property you are aggregating: Price
+                            </li>
+                            <li>
+                                A button that adds to/removes from the aggregator: "Add to Favorites" and "Remove from Favorites"
+                            </li>
+                        </ul>
+                        
+
+                    </ul>
+
+                    <h1 class="sub-title">Functionality and Usability</h1>
+                    <ul>
+                        <li>
+                            I wanted my application to handle any combination of filters. All filtering and sorting 
+                            options work together without breaking the page. (Note: The filtering and sorting can only 
+                            be applied to the displayed items and cannot be applied to the items on the favorites list.
+                        </li>
+                        <li>
+                            I decided to include an option to revert back to the original state without refreshing the page. This can be done
+                            by clicking “All” category under "Types" and "Dietary Restrictions".
+                        </li>
+                        <li>
+                            I included the option to add to and remove items from the aggregator section, which is a favorites list. 
+                            When an item is added or removed from favorites, the total cost of the items on the list updates accordingly.
+                        </li>
+                        <li>
+                            I made sure that the design of my application is intuitive and easy to use. 
+                            The user can easily understand the purpose of the filtering buttons, sorting options, and the aggregator.
+                        </li>
+                    </ul>
+                    <!-- <img src="./pics/wireframes.jpg" style="width:100%;" alt="Wireframes Presentation"> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="part">
+        <div class="container-2">
+            <div class="row">
+                <h1 class="part-1-title">Development Process</h1>
+                <div class="part-1-col-1">
+                    <h1 class="sub-title">Usability Principles Considered</h1>
+                    <p>
+                        Some of the principles I considered where efficiency, effectivity, 
+                        customisability and consistency. For effectivity, I wanted to be 
+                        sure that the user reached their goal when they are using my application. 
+                        My application provides suitable functionality and this allows the users to do tasks effectively. 
+                        I only put necessary widgets and buttons on my webpage and avoided including unneccesarry functionalities 
+                        so that the user is not overwhelmed or distracted.
+                    </p>
+
+                    <p>
+                        For efficieny, I made sure that the user can reach their goal as quickly as possible. 
+                        I wanted the user to accomplish their tasks in a short amount of time. Therefore, 
+                        I designed my application so that it requires a minimal time to execute an action on the website. 
+                        I designed my interface widgets such as the sidebar and the aggregator simple so that 
+                        it is easy to use. I added default options so that the user can go back to start when they want to.
+                    </p>
+                    <p>
+                        Moreover, I made my webpage customizable so that everything on the interface suits the user and 
+                        the user has the power. My application is flexible enough to support different ways for completing a task. 
+                        Combinations of sorting and filtering work together so that the user can try different approaches when 
+                        they are reaching their goal. The users can also add and remove items to/from the favorites list as they wish.
+                    </p>
+                    <p>
+                        Lastly, I considered consistency when I was designing by webpage. I made sure that I followed a consistent simple design and everything 
+                        fits well together on my application. By implementing consistency, I wanted the user to easily reuse a pattern 
+                        once learned. When using the application, the user would know what 'Add to Favorites' or 'Remove from Favorites' buttons do. 
+                        They would know how the filtering/sorting buttons work.
+                    </p>
+                   
+                    <h1 class="sub-title">Organization of Components</h1>
+                    <p>
+                        My consists of two components. The first component is for the items and it is called BakeryItem.js. 
+                        In this component, I create a bakery item and add the image, name, type, diet, description, 
+                        price and the button to add/remove. This component retuns the bakery item and its values. The second one, 
+                        called Aggregator.js, is the aggregator component that shows the items and 
+                        the aggregtor value. This returns the name of the item that is added to the favorites list.
+                    </p>
+                    <h1 class="sub-title">How Data is Passed Down Through Components</h1>
+                    <p> I provide my BakeryItem component with a props parameter. This allows me to make my component dynamic and 
+                        change its behaviour based on what I pass in. This also allows me to access and call addToCart function 
+                        in BakeryItem component by using props.addToCart. Calling props.addToCart in the BakeryItem component calls 
+                        the function addToCart in App.js. To access the bakery items, I use bakeryData that I get from bakery-data.json and 
+                        map it to BakeryItem components to list my items. I also pass props parameter to my Aggregator component.
+                        In Aggregator component, I return props.name. This allows me to return the name of the bakery item. In App.js, I map cartItems and set 'name' variable of 
+                        Aggregator.js equal to item.name. With this, when props.name is returned in Aggregator.js, it returns item.name.
+                    </p>
+                    <h1 class="sub-title">How the User Triggers State Changes</h1>
+                    <p>In order to implement filtering, I use state. In order to keep track of the filtering that the user chooses,
+                        I use React's built-in useState hook and define 'type' and 'setType', which is the function that updates the variable 'type', for type filtering. Similarly, I define 'diet' variable and 'setDiet' function for diet restrictions filtering.
+                        Both of these filtering options follow the same process.
+                    </p>
+                    <p>
+                        I define a function called setFilterType, which gets triggered when the user clicks on a button to choose filtering. 
+                        When this function is triggered, 'setType' function is called and the 'type' is set to the value that corresponds 
+                        to the button the user clicked. This is how the user triggers state changes. Then, I define a function called 'matchesFilterType' which has if statements that checkes the value of 'type' and returns true or false accordingly. It also makes sures that all items should be shown when no filter is selected. 
+                        This function is passed into filter function, which is called on bakeryData (all the bakery items)
+                    </p>
+                    <p>
+                        In order to implement sorting, I use state as well. Similar to keeping track of filtering, I use React's built-in useState hook to keep track of the sorting that the user chooses.
+                        I define variable 'sorted' and 'setSorted' function that I use to update 'sorted'. 
+                        Then, I define a function called handleCheck which calles setSorted and sets the value of 'sorted'. 
+                        I add an onChange event on each of the buttons for sorting. When the user clicks on a sorting option, 
+                        the onChange event triggers handleCheck function. For example, when the user chooses 'Lowest Price' option for sorting, the handleCheck function takes in this value and passes 
+                        in setSorted to set the 'sorted' variable to 'Lowest Price'. I use if statements to check which 'sorted' option has been chosen and call sort() function on the filteredData to sort the items accordingly. 
+                        This way, when the user clicks on a sorting options, the data will be sorted.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="part">
+
+        <div class="end">
+            <div class="container-2">
+                <h3 class="end-title">Bakery Final Concept</h3>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <div class="row">
+                <!-- <h1 class="part-1-title">Final Concept</h1> -->
+                <div class="part-1-col-1">
+                    <h1 class="sub-title">Adding and Removing Items</h1>
+                    <img src="./pics/adding-removing-gif.gif" style="width:100%; margin-top:20px; border-radius:5px; border: 0.01px solid #949494; background-color: white;">
+                    <p>
+                        On the homepage, the user can view all the items on the list. By clicking the "Add to Favorites" button under an item,
+                        the item can be added to the favorites list. The total cost of the favorites list will update and add up each time an item is added.
+                        Similarly, the item can be removed by clicking "Remove From Favorites" button. When an item is removed, the total cost would update accordingly.
+                        The favorites list can be viewed on the sidebar. 
+                    </p>
+                    <h1 class="sub-title">Filtering Items</h1>
+                    <img src="./pics/filtering-gif.gif" style="width:100%; margin-top:20px; border-radius:5px; border: 0.01px solid #949494; background-color: white;">
+
+                    <p>
+                        On the sidebar, the filtering options can be viewed. The items can be filtered by their types, which can be 'Bread', 'Cookie', or
+                        'Pastry'. Similarly, the items can also be filtered by their dietary restrictions, which can be 'Gluten-Free', 'Nut-Free', or 'Vegetarian'.
+                        Both filtering categories can be used together. 
+                    </p>
+                    <h1 class="sub-title">Sorting Items</h1>
+                    <img src="./pics/sorting-gif.gif" style="width:100%; margin-top:20px; border-radius:5px; border: 0.01px solid #949494; background-color: white;">
+                    <p>
+                        On the sidebar, the sorting options can be viewed. The user can choose to view the items with the cheapest price, items with the highest price, or
+                        the items with the most popularity first. Sorting and filtering can be done together. 
+                    </p>
+
+                    <p>The final version of the website can be found here: <a href="https://tiredkitty147.github.io/development/" target="_blank">https://tiredkitty147.github.io/development/</a></p>
+                                         
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+
+            <div class="footer-nav-container">
+                <p class="footer-nav" style="text-align:center;">
+                    <a href="./index.html">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="./about.html">
+                        <strong>About</strong>
+                    </a>
+                    
+                </p>
+            </div>
+            
+
+            <div class="social">
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/hellokitty/" target="_blank"></a>
+                <a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@hellokitty" target="_blank"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.style.width = "100%";
+        }
+        function closenav() {
+            menu.style.width = "0%";
+        }
+    </script>
+
+</body>
+
+
+</html>

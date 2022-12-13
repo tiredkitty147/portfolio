@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Work | Tired Kitty</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">tired kitty</a>
+                <ul id="menu">
+                    <li><a href="./index.html">work</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+
+            <div class="text">
+                <h1> Hi there, I'm Tired Kitty!</h1>
+                <h2>I am studying computer science at <span class="school"><a href="https://www.brown.edu/"
+                            target="_blank">Brown University</a></span>.
+                    I am ambitious about creating fun and minimalistic user experiences for web and mobile products, while focusing on usability. Meow!</h2>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!----portfolio/work section-->
+
+    <div id="portfolio">
+        <div class="container">
+            <!-- <h1 class="sub-title">Work</h1> -->
+            <div class="work-list">
+
+
+                <div class="work-container">
+                    <a href="./responsive-redesign.html">
+                        <div class="work">
+                            <img src="./pics/yahoo-homepage.jpg" alt="responsive redesign">
+                            <div class="description">
+                                <h3>Responsive Redesign of Yahoo</h3>
+                                <p>In this project, the task was to practice the workflow of redesigning
+                                    a simple website and coding one page of this website taking accesibility and
+                                    responsiveness into account.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <figcaption class="caption-wrapper">
+                        <div class="img-caption">
+                            <h1>
+                                <strong>Responsive Redesign</strong>
+                                — UI & UX Project
+                            </h1>
+                        </div>
+                    </figcaption>
+
+                </div>
+
+
+                <div class="work-container">
+                    <a href="./iterative-design.html">
+                        <div class="work">
+                            <img src="./pics/hello-homepage.jpg" alt="iterative design">
+                            <div class="description">
+                                <h3>Iterative Design for Hello</h3>
+                                <p>In this project, the task was to design an interactive interface for an emerging
+                                    startup called Hello,
+                                    going through the full process of mocking up a solution to the startup's concept.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <figcaption class="caption-wrapper">
+                        <div class="img-caption">
+                            <h1>
+                                <strong>Iterative Design</strong>
+                                — UI & UX Project
+                            </h1>
+                        </div>
+                    </figcaption>
+                </div>
+
+                <div class="work-container">
+                    <a href="./eyetracking.html">
+                        <div class="work">
+                            <img src="./pics/eyetracking-home.jpg" alt="eyetracking">
+                            <div class="description">
+                                <h3>Eyetracking</h3>
+                                <p>In this project, we designed two different versions of a website and used eye tracking method to evaluate 
+                                    the usability and the efficiency of each design.  
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <figcaption class="caption-wrapper">
+                        <div class="img-caption">
+                            <h1>
+                                <strong>Eyetracking</strong>
+                                — UI & UX Project
+                            </h1>
+                        </div>
+                    </figcaption>
+                </div>
+
+                <div class="work-container">
+                    <a href="./development.html">
+                        <div class="work">
+                            <img src="./pics/kismet.jpg" alt="development">
+                            <div class="description">
+                                <h3>Development</h3>
+                                <p>In this project, I developed an interactive interface for users to select items out of a list, which then aggregates them by using 
+                                    interface components, and tieing the components to an internal data state.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <figcaption class="caption-wrapper">
+                        <div class="img-caption">
+                            <h1>
+                                <strong>Development</strong>
+                                — UI & UX Project
+                            </h1>
+                        </div>
+                    </figcaption>
+
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="container">
+
+            <div class="footer-nav-container">
+                <p class="footer-nav" style="text-align:center;">
+                    <a href="./index.html">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="./about.html">
+                        <strong>About</strong>
+                    </a>
+                </p>
+            </div>
+            
+            <div class="social">
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/hellokitty/" target="_blank"></a>
+                <a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@hellokitty" target="_blank"></a>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.style.width = "100%";
+        }
+        function closenav() {
+            menu.style.width = "0%";
+        }
+
+    </script>
+
+</body>
+
+
+
+
+</html>

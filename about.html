@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> About | Tired Kitty </title>
+    <link rel="stylesheet" href="./about.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="logo.png"/>-->
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container-1">
+            <nav>
+                <a class="name" href="./index.html">tired kitty</a>
+                <ul id="menu">
+                    <li><a href="./index.html">work</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!------------------------ABOUT-------------------------------------->
+
+    <div id="about">
+        <div class="container-2">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./pics/hello-kitty.png">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am Tired Kitty (aka Hello Kitty, aka Kitty White!) and I was born on November 1, 1974 in London, England. I moved to the United States to pursue
+                        my american dream, which is to become a UX designer!
+                        Currently, I am a junior studying Computer Science and Economics at Brown University.
+                    </p>
+                    <p> When I was in high school, I was interested in business and consulting and this led me to pursue
+                        internships in these industries.
+                        This semester, I've developed a passion for UX Design when I started taking a UI/UX course at
+                        Brown. This course guided me to pursue my career in UX design.
+                        My past experiences taught me to work collaboratively, come up with innovative solutions and
+                        help people to solve their challenges and
+                        I believe that I can transfer these skills to UX Design. I am always working to improve my
+                        design skills, and keep up with new trends and technologies.
+                    </p>
+                    <p>Some fun facts about me: My star sign is scorpio! Some of my hobbies are watching true crime shows, playing the piano, origami, 
+                        baking, and other cute things:) My favorite food is my mama's homemade apple pie! I LOVE APPLES! My favorite color is red.
+                    </p>
+                    <p> In my free time, you can find me dancing to house music by myself (favorites dj are Rampa, &ME, Polo & Pan, Peggy Gou), and 
+                        watching Breaking Bad over and over. I also love traveling! If you have suggestions on
+                        what I should watch or which country I should see next, reach out! Don't forget to check out my Instagram and TikTok!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------------footer--->
+
+    <div id="footer">
+        <div class="container">
+
+            <div class="footer-nav-container">
+                <p class="footer-nav" style="text-align:center;">
+                    <a href="./index.html">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="./about.html">
+                        <strong>About</strong>
+                    </a>
+                    
+                </p>
+            </div>
+
+
+            <div class="social">
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/hellokitty/" target="_blank"></a>
+                <a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@hellokitty" target="_blank"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.style.width = "100%";
+        }
+        function closenav() {
+            menu.style.width = "0%";
+        }
+    </script>
+
+</body>
+
+
+
+</html>

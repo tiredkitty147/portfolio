@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Responsive Redesign | Tired Kitty </title>
+    <link rel="stylesheet" href="./responsive-redesign.css">
+    <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container-1">
+            <nav class="nav-bar">
+                <a class="name" href="./index.html">tired kitty</a>
+                <ul id="menu">
+                    <li><a href="./index.html">work</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opennav()"></i>
+            </nav>
+
+
+
+        </div>
+    </div>
+
+    <img class="presentation" src="./pics/yahoo-presentation.jpg" style="width:100%;" alt="Design Presentation">
+
+    <div id="part">
+        
+        <div class="row">
+            <div class="container-2">
+                <div class="text">
+                    <h1 class="assignment-title"> Responsive Redesign for Yahoo </h1>
+                    <div class="info-row">
+                        <div class="info-col">
+                            <strong class="info-col-title">Team:</strong>
+                            <div class="info">
+                                <p>Individual</p>
+                            </div>
+                        </div>
+                        <div class="info-col">
+                            <strong class="info-col-title">Role:</strong>
+                            <div class="info">
+                                <p>Researcher & Designer</p>
+                            </div>
+
+                        </div>
+
+                        <div class="info-col">
+                            <strong class="info-col-title">Timeline:</strong>
+                            <div class="info">
+                                <p>September 2022 (3 weeks)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="introduction">
+                <div class="container-2">
+                    <h1 class="introduction-title"> Introduction</h1>
+                    <p class="introduction-parag">Responsive Redesign is a project I have completed as a part
+                        of CSCI1300:
+                        User Interface and User Experiences course at Brown University.
+                        In this project, the task was to practice the workflow of redesigning 
+                        a simple website and coding one page of this website taking accesibility and responsiveness into account. 
+                        I chose Yahoo.com as the website I wanted to 
+                        redesign, identified the problems existing on this interface, 
+                        created prototypes for various screens, and build a responsive website based on these prototypes.
+                        Yahoo! is a portal that contains a search engine and other services such as mail, news coverage, politics, 
+                        finance, weather forecast, and such.
+                    </p>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="container-2">
+                <h1 class="part-1-title">Identifying Usability Problems</h1>
+                <div class="part-1-col-1">
+                    <h2 class="sub-title">Original Webpage</h2>
+                    <p>
+                        I chose Yahoo.com (home page) to analyze based 
+                        on usability and accessibility standards. Yahoo is the 
+                        least used search engine amongst others and I wanted to figure out 
+                        how could it be improved so that more people use it. I started examining the home page to find the problems existing on 
+                        the website to figure out why it is one of the least used search engines. 
+                    </p>
+                    <p>Below, you can view how Yahoo's homepage looks like currently. The website can also be reached at <a href="https://www.yahoo.com/" target="_blank">https://www.yahoo.com/</a></p>
+                    <img class="yahoo-home-page"src="./pics/Group 11.jpg" style="width:100%;">
+
+                    <h2 class="sub-title">Problems of The Website</h2>
+
+                    <h3 class="sub-sub-title">Usability Issues</h3>
+                        <ul>
+                            <li>There is too much text on the page.</li>
+                            <li>There are too many different items to navigate. This makes the readers take much more
+                                time to read and understand the website's content. The users can have a hard time finding the information they are looking for.</li>
+                            <li>The images of news and ads are cluttered.</li>
+                            <li>The section on the right is very cluttered.</li>
+                            <li>The website is difficult to navigate and it does not have a clear page structure. 
+                                There is no hierarchy. It is hard to differentiate what's important and what's less important.
+                            </li>
+                            <li>There are repetitive links. There is a button for 'mail' twice.</li>
+                            <li>It is a never-ending home page and the user can scroll down forever.</li>
+                            <li>It is hard to learn and remember the page because it is too crowded.</li>
+                            <li>The search bar is not so obvious and be missed because of the other distractions on the webpage.</li>
+                        </ul>
+                        <h3 class="sub-sub-title"> Accessibility Issues</h3>
+                        <ul> 
+                            <li>Some text on the website have very low color contrast. The choice of font and color for most of the text is poor.
+                                Most of the text font is really small 
+                                and this makes it harder to read. For example, the subtitles above images that indicate which section the information belong to
+                                are light gray and has very small font size and thin font weight; therefore, they have a pretty low contrast on top of the white background. 
+                            </li>
+                            <li>Most of the images does not have alternative text for users who cannot view them.</li>
+                            <li>Some buttons are empty or have no value text. </li>
+                        </ul>
+
+                        <h3 class="sub-sub-title"> Conceptual Issues</h3>
+                        <ul>
+                            <li>This is the homepage for the Yahoo and it has a search bar at the top and a navigation bar right under that, which follows the 
+                                general model for a search engine. 
+                            </li>
+                            <li>However, the homepage contains too much information such as news even though Yahoo has a sepearte page for the news section.</li>
+                        </ul>
+                        <h3 class="sub-sub-title">WebAIM WAVE Accesibility</h3>
+                        <p>
+                            The Wave Accessibilty tool is used to identify accesibility errors. By using this tool, I was able to identify the errors I had mentioned about
+                            such as missing alternative texts for images, contrast issues, small text, and empty buttons. 
+                        </p>
+                        
+                        <p> The website's overall usability is poor. Usability is a quality that measures how easy 
+                            to use a user interface. Usability is defined by components such as learnability, 
+                            efficiency, and memorability. If I look at the learnability attribute for Yahoo.com, 
+                            I can see that the Yahoo homepage is unfortunately not so easy for users to navigate and 
+                            accomplish tasks when they first encounter the website. It takes longer for users to learn the website. Therefore, I can say that the efficiency of the website is poor because even though the users learn the website, it is still hard to perform basic tasks such as differentiating between ads and news, logging in to mail, or navigating through the website. The homepage also has poor memorability because the structure is confusing, crowded, and not consistent.
+                            It could be hard for users to reestablish proficiency after some period of time not using it.  
+                        </p>
+                </div>
+            </div>
+
+
+            <div class="container-2">
+                <h1 class="part-1-title">Wireframing</h1>
+                <div class="part-1-col-1">
+                    <h2 class="sub-title">Pre-design Thinking</h2>
+                    <p>
+                        The intended audience of Yahoo! consists of people who use the internet on a daily basis. People who email, 
+                        read the news, follows politics, finance or sports and wants to learn about the weather would be using Yahoo! frequently.
+                        Basically, Yahoo! would target everyone who is be using a search engine.
+                        The users can visit Yahoo! on their laptops, mobile phones or tablets. 
+                    </p>
+                    <p>
+                        Using this information as a jumping-off point, I concluded that:
+                    </p>
+
+                    <ul>
+                        <li>The website shouldn't be complex. It should be easy to learn and use every day.
+                        </li>
+                        <li>
+                            The home page should include only the most important information. The user should not be distracted by unnecessary content and be able to 
+                            customize their homepage by signing in.
+                        </li>
+                        <li>
+                            The search bar should be centered to draw the user's attention.
+                        </li>
+
+                    </ul>
+
+                    <h2 class="sub-title">Combining Ideas into a Wireframe</h2>
+
+                    <p>
+                        I wanted the new design to be simple, intuitive, and easy to use.
+                        Furthermore, I wanted a clean look, which would include less content and information.
+                    </p>
+                    <p> Using Figma, I created a total of 3 wireframes of my screen, 
+                        one for each of the screen sizes (mobile, tablet, desktop). Below is how the new design would look like for the
+                        desktop.
+                    </p>
+                    <img class="dekstop-wireframe" style="width:100%;" src="./pics/Group 7.jpg" alt="Low-fi Desktop">
+
+                    <p> For the tablet and mobile screens, the responsive navigation bar turns into a menu (three bars). The 
+                        content lines up vertically so that it fits the screen better. The one on the right is the low-fidelity wireframe for
+                        tablet screen and the left one is for the mobile screen.
+                    </p>
+                    <img src="./pics/tablet-mobile-lowfi.jpg"  class="dekstop-wireframe" style="width:100%;" alt="Low-fi Tablet and Mobile" >
+
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+    </div>
+
+
+
+    <div id="part">
+        <div class="container-2">
+            <div class="row">
+                <h1 class="part-1-title">Visual Redesign</h1>
+                <div class="part-1-col-1">
+                    <h2 class="sub-title">Style Guide</h2>
+                        <p>
+                            Using Figma, I created a visual design style guide that displays
+                            the main colors, typography, and reusable components' different states (buttons on hover, click, etc.).
+                        </p>
+                    <img src="./pics/styleguide-2.jpg" style="width:100%;" alt="Style Guide">
+                    <h2 class="sub-title">Designing The High-Fidelity Frame</h2>
+                    <p>
+                        Using Figma, I created a high-fidelity prototype.
+                        While making the new design, I chose a clean look with minimal distractions.
+                        I paid attention to text hierarchy and color scheme to make our page easy to read and
+                        navigate.
+                        By using contrasting colors, such as black and purple text on a white background, I made sure that the font is
+                        visible and anyone could read the website.
+                        I chose to put the navigation bar on top of the search bar to make it easily accessible and help the users find the content they are looking for. 
+                        I put only the trending news and the weekly weather forecast on the home page so that the page doesn't have many distractions. 
+                    </p>
+                    <h2 class="sub-title">Desktop</h2>
+                    <img class="group" src="./pics/yahoo-desktop-hifi.jpg" style="width:100%; margin-bottom: 20px;" alt="High-Fidelity Frame for Desktop">
+                    <h2 class="sub-title">Tablet and Mobile</h2>
+                    <img class="group" src="./pics/yahoo-tablet-mobile-hifi.jpg" style="width:100%; margin-bottom: 20px;" alt="High-Fidelity Frame for Tablet and Mobile">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="part">
+
+        <div class="end">
+            <div class="container-2">
+                <h3 class="end-title">Yahoo Final Concept</h3>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <div class="row">
+                <div class="part-1-col-1">
+                    <img src="./pics/yahoo-gif.gif" style="width:100%; margin-top:25rpx; border-radius:5px; border: 0.01px solid #949494; background-color: white;">
+                    <h1 class="sub-title">Homepage and Search Bar</h1>
+                    <p>
+                        On the homepage, the user can start their search by typing in the seach bar next to the logo. The use can view the trending news
+                        and the weather for that week on their homepage. Users can customize their home page and add more widgets by signing in to their account by clicking
+                        'Sign In' on the navigation bar. They can navigate to other pages on the navigation bar.
+                    </p>
+                    <p> The webpage can be viewed here: <a target="_blank" href="https://tiredkitty147.github.io/responsive-redesign/">https://tiredkitty147.github.io/responsive-redesign/</a></p>
+                     
+                    <h1 class="part-1-title" style="margin-top:40px;">Takeaways</h1>
+                    <p>
+                        In this project, I was able to focus on the responsiveness of a website. My goal was to build a website that detects the user's screen size
+                        and change the layout of the design accordingly. Responsive redesign of Yahoo allows the user to freely choose the
+                        screen size they want to view the webpage on. The responsiveness of the website I created enables the website to look great 
+                        on all screen resolutions, sizes, and devices. It provides the most effective use of the website and the best user experience. 
+                        Moreover, this makes it unneeded to create different versions of my website for tablet and mobile screens and
+                        helps me save time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+
+            <div class="footer-nav-container">
+                <p class="footer-nav" style="text-align:center;">
+                    <a href="./index.html">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="./about.html">
+                        <strong>About</strong>
+                    </a>
+                    
+                </p>
+            </div>
+            
+
+            <div class="social">
+                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/hellokitty/" target="_blank"></a>
+                    <a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@hellokitty" target="_blank"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var menu = document.getElementById("menu");
+
+        function opennav() {
+            menu.style.width = "100%";
+        }
+        function closenav() {
+            menu.style.width = "0%";
+        }
+    </script>
+
+</body>
+
+
+</html>
